@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Wed 2022-06-08 16:43:04 EAT; 1min 15s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 18414 (dockerd)
+      Tasks: 9
+     Memory: 34.3M
+     CGroup: /system.slice/docker.service
+             └─18414 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Juu 08 16:43:03 wandie-HP-Laptop-14-fq0xxx dockerd[18414]: time="2022-06-08T16:43:03.797048736+03:00" level=warning msg="Your kernel does not support CPU realtime scheduler"
+Juu 08 16:43:03 wandie-HP-Laptop-14-fq0xxx dockerd[18414]: time="2022-06-08T16:43:03.797086833+03:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+Juu 08 16:43:03 wandie-HP-Laptop-14-fq0xxx dockerd[18414]: time="2022-06-08T16:43:03.797099649+03:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Juu 08 16:43:03 wandie-HP-Laptop-14-fq0xxx dockerd[18414]: time="2022-06-08T16:43:03.797370750+03:00" level=info msg="Loading containers: start."
+Juu 08 16:43:03 wandie-HP-Laptop-14-fq0xxx dockerd[18414]: time="2022-06-08T16:43:03.924882589+03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Juu 08 16:43:04 wandie-HP-Laptop-14-fq0xxx dockerd[18414]: time="2022-06-08T16:43:04.001579229+03:00" level=info msg="Loading containers: done."
+Juu 08 16:43:04 wandie-HP-Laptop-14-fq0xxx dockerd[18414]: time="2022-06-08T16:43:04.063492025+03:00" level=info msg="Docker daemon" commit=a89b842 graphdriver(s)=overlay2 version=20.10.17
+Juu 08 16:43:04 wandie-HP-Laptop-14-fq0xxx dockerd[18414]: time="2022-06-08T16:43:04.063709767+03:00" level=info msg="Daemon has completed initialization"
+Juu 08 16:43:04 wandie-HP-Laptop-14-fq0xxx systemd[1]: Started Docker Application Container Engine.
+Juu 08 16:43:04 wandie-HP-Laptop-14-fq0xxx dockerd[18414]: time="2022-06-08T16:43:04.097723818+03:00" level=info msg="API listen on /run/docker.sock"

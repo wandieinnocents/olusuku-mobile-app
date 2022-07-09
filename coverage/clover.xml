@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1648118511146" clover="3.2.0">
+  <project timestamp="1648118511146" name="All files">
+    <metrics statements="14" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0" elements="22" coveredelements="0" complexity="0" loc="14" ncloc="14" packages="2" files="3" classes="3"/>
+    <package name="rydexuser_mobile_app">
+      <metrics statements="14" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="App.js" path="/home/tendo/rydexuser_mobile_app/App.js">
+        <metrics statements="14" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="148" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="rydexuser_mobile_app.screens">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="AppIntro1.jsx" path="/home/tendo/rydexuser_mobile_app/screens/AppIntro1.jsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="AppIntroData.js" path="/home/tendo/rydexuser_mobile_app/screens/AppIntroData.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>
