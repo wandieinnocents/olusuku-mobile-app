@@ -178,9 +178,9 @@ const slides = [
   {
     key: 's2',
     title: '',
-    text: 'HAVE A MOTORBIKE \n\n Rydex Team is closer to you than ever \n bringing motorbike repair \n services at the click of a button!',
-    image:require('../../assets/appintro/motorbike.png'),
-    backgroundColor: '#42d1f5',
+    text: 'GROWN ORGANICALLY \n\n Get foods and herbs that are \n organicaly grown with \n  only natural inputs',
+    image:require('../../assets/olusuku/apple.png'),
+    backgroundColor: '#cf3034',
   },
   {
     key: 's3',
