@@ -67,6 +67,7 @@ function Home({ navigation }) {
           {/* End of top image section */}
 
           {/* shape rotate */}
+          <View style={styles.rotateShape}></View>
           {/* end rotate shape  */}
 
           {/* menuItemsSection  */}
@@ -79,7 +80,9 @@ function Home({ navigation }) {
               <View style={styles.repairMenu}>
                 <TouchableOpacity
                   // link to find provider
-                  
+                  onPress={() => {
+                    navigation.navigate("FindProvider");
+                  }}
                   style={{ alignItems: "center" }}
                 >
                   {/* Icon */}
@@ -106,7 +109,9 @@ function Home({ navigation }) {
               {/* Fuel Menu */}
               <View style={styles.fuelMenu}>
                 <TouchableOpacity
-                  
+                  onPress={() => {
+                    navigation.navigate("FuelProviderCategory");
+                  }}
                   style={{ alignItems: "center" }}
                 >
                   {/* Icon */}
@@ -132,7 +137,7 @@ function Home({ navigation }) {
 
             {/* End of flex box section  - row 1*/}
 
-           
+            
 
             {/* End of flex box section  - row 2*/}
           </View>
@@ -181,7 +186,13 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     position: "relative",
   },
- 
+  // top_section image background
+  image_properties: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center",
+    height: "50%",
+  },
   //menu items flex section
   menuItemsSection: {
     flex: 1,
@@ -201,7 +212,23 @@ const styles = StyleSheet.create({
     // elevation: 10
   },
 
-  
+  // Rotate shape
+  rotateShape: {
+    flex: 1,
+    backgroundColor: "#fff",
+    // borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    // paddingHorizontal: 60,
+    marginTop: 20,
+    height: "100%",
+    width: "100%",
+    top: "38%",
+    // left: 0,
+    right: -35,
+    position: "absolute",
+    transform: [{ rotate: "-6deg" }],
+    // elevation: 10
+  },
 
   //main menu flex box container
   menuItemsFlexboxContainer: {
@@ -255,7 +282,21 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 30,
   },
 
- 
+  // spareParts  menu section
+  sparePartsMenu: {
+    flex: 1,
+    height: 140,
+    justifyContent: "center",
+    alignItems: "center",
+    // marginLeft: -80,
+    marginLeft: 20,
+    backgroundColor: "#000",
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    borderBottomLeftRadius: 30,
+    borderBottomRightRadius: 30,
+  },
+
   // menuIcon
   menuIcon: {
     marginBottom: 10,

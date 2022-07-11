@@ -187,7 +187,7 @@ const slides = [
     text: ' HOW IT WORKS \n\n You can Signup on the app \n Visit the catalogue \n and shop',
     image: require('../../assets/olusuku/cart.png'),
     backgroundColor: '#b04f99',
-    imageStyle: styles.image,
+    // imageStyle: styles.image,
   
   }
 ];
