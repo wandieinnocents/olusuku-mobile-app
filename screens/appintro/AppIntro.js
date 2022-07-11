@@ -167,13 +167,13 @@ const styles = StyleSheet.create({
 const slides = [
   {
     key: 's1',
-    text: 'HAVING CAR ISSUES ? \n\n Rydex Team is closer to you than ever \n bringing the car repair services \n at the click of a button!',
+    text: 'FRESH FOODS & HERBS \n\n Get Fresh x organic Foods and  \n Herbs To your Kitchen Door \n with convinience.',
     title: '',
-    image:require('../../assets/appintro/car-repair.png'),
-    backgroundColor: '#f5429b',
+    image:require('../../assets/olusuku/orange.png'),
+    backgroundColor: '#e96c16',
     // backgroundColor:styles.gradientRed,
     elevation: 20,
-    shadowColor: '#52006A',
+    shadowColor: '#e96c16',
   },
   {
     key: 's2',

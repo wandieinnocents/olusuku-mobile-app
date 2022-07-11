@@ -27,7 +27,10 @@ Rydex is a mobile application  to locate the nearest and affordable repair servi
 - Expo Vector icons : https://icons.expo.fyi/
 
 ## Start app if errors exist
-cd android && ./gradlew cleanBuildCache && cd .. && watchman watch-del-all && rm -rf node_modules/ && rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-* &&   yarn cache clean && yarn install &&  yarn start --reset-cache
+cd android && ./gradlew cleanBuildCache && cd .. && watchman watch-del-all && rm -rf node_modules/ && rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-* &&   yarn cache clean && yarn install &&  yarn start --reset-cache 
+
+# Delete node modules and run
+rm -rf node_modules && yarn install && react-native run-android
 
 ## Run app
 npm run android
@@ -37,6 +40,9 @@ npm run android
 - cd android
 - Create debug build (RUN): ./gradlew assembleDebug
 
+## Best way to run
+Run expo start 
+Type a : to emulate the android version 
 
 # Build , Automation and Release Management
 
