@@ -184,9 +184,9 @@ const slides = [
   },
   {
     key: 's3',
-    text: ' GET STARTED TODAY \n\n Take control of your automobile and its \n fixed at your convenience.',
-    image: require('../../assets/appintro/rockets.png'),
-    backgroundColor: '#5500bcb6',
+    text: ' HOW IT WORKS \n\n You can Signup on the app \n Visit the catalogue \n and shop',
+    image: require('../../assets/olusuku/cart.png'),
+    backgroundColor: '#b04f99',
     imageStyle: styles.image,
   
   }
