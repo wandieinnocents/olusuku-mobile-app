@@ -60,7 +60,7 @@ function Home({ navigation }) {
           {/* top image section */}
           <View style={styles.top_image_section}>
             <ImageBackground
-              source={require("../../assets/mainmenu/bann.png")}
+              source={require("../../assets/olusuku/man.jpg")}
               style={styles.image_properties}
             ></ImageBackground>
           </View>
@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
     height: "100%",
     width: "100%",
     // top - balance form section above.
-    top: "35%",
+    top: "50%",
     // top:150,
     position: "absolute",
     // transform: [{ rotate: '-10deg' }]
