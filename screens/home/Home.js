@@ -60,7 +60,7 @@ function Home({ navigation }) {
           {/* top image section */}
           <View style={styles.top_image_section}>
             <ImageBackground
-              source={require("../../assets/olusuku/man.jpg")}
+              source={require("../../assets/olusuku/b.png")}
               style={styles.image_properties}
             ></ImageBackground>
           </View>
@@ -80,21 +80,20 @@ function Home({ navigation }) {
               <View style={styles.repairMenu}>
                 <TouchableOpacity
                   // link to find provider
-                  onPress={() => {
-                    navigation.navigate("FindProvider");
-                  }}
+                  // onPress={() => {
+                  //   navigation.navigate("FindProvider");
+                  // }}
                   style={{ alignItems: "center" }}
                 >
                   {/* Icon */}
 
                   <Image
                     style={{ width: 60, height: 60 }}
-                    source={require("../../assets/mainmenu/car-repair.png")}
+                    source={require("../../assets/olusuku/shopicon.png")}
                   />
-                  {/* <SvgUri fill="#fff" style={{ width:80 , height: 50  }} source={require('../../assets/mainmenu/car.png')} /> */}
 
                   {/* Menu name */}
-                  <Text style={styles.menuItemTex}>Add Repair </Text>
+                  <Text style={styles.menuItemTex}>Catalogue </Text>
 
                   {/* arrow  */}
                   <AntDesign
@@ -109,20 +108,19 @@ function Home({ navigation }) {
               {/* Fuel Menu */}
               <View style={styles.fuelMenu}>
                 <TouchableOpacity
-                  onPress={() => {
-                    navigation.navigate("FuelProviderCategory");
-                  }}
+                  // onPress={() => {
+                  //   navigation.navigate("FuelProviderCategory");
+                  // }}
                   style={{ alignItems: "center" }}
                 >
                   {/* Icon */}
-                  <SvgUri
-                    fill="#fff"
-                    style={{ width: 80, height: 50 }}
-                    source={require("../../assets/mainmenu/fuel.svg")}
+                  <Image
+                    style={{ width: 60, height: 60 }}
+                    source={require("../../assets/olusuku/callicon.png")}
                   />
 
                   {/* Menu name */}
-                  <Text style={styles.menuItemTex}>Add Fuel </Text>
+                  <Text style={styles.menuItemTex}>Support </Text>
 
                   {/* arrow  */}
                   <AntDesign
@@ -224,7 +222,7 @@ const styles = StyleSheet.create({
     width: "100%",
     top: "38%",
     // left: 0,
-    right: -35,
+    right: -30,
     position: "absolute",
     transform: [{ rotate: "-6deg" }],
     // elevation: 10
