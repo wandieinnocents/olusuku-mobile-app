@@ -4,9 +4,9 @@
     "slug": "rydexuser",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/iconn.png",
+    "icon": "./assets/icono.png",
     "splash": {
-      "image": "./assets/splassh.png",
+      "image": "./assets/splasho.png",
       "resizeMode": "cover",
       "backgroundColor": "#28489E"
     },
