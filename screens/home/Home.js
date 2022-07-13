@@ -37,8 +37,8 @@ function Home({ navigation }) {
       const result = await Share.share({
         title: "App link",
         message:
-          "Please install this app and stay safe , AppLink :https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en",
-        url: "https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en",
+          "Share the app to help others get organic products , food and herbs",
+        url: "",
       });
       if (result.action === Share.sharedAction) {
         if (result.activityType) {
@@ -120,7 +120,7 @@ function Home({ navigation }) {
                   />
 
                   {/* Menu name */}
-                  <Text style={styles.menuItemTex}>Support </Text>
+                  <Text style={styles.menuItemTex}>Support</Text>
 
                   {/* arrow  */}
                   <AntDesign

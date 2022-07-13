@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "rydexuser",
-    "slug": "rydexuser",
+    "name": "olusuku",
+    "slug": "olusuku",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icono.png",
@@ -24,7 +24,7 @@
         "foregroundImage": "./assets/adaptive-iconn.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.wandie.rydexuser"
+      "package": "com.wandie.olusukuorganic"
     },
     "web": {
       "favicon": "./assets/favicon.png"
