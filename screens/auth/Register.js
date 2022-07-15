@@ -42,10 +42,10 @@ function Register() {
         <View style={styles.flex_container}>
           {/* image section */}
           <View style={styles.top_image_section}>
-            <ImageBackground
+            {/* <ImageBackground
               source={require("../../assets/auth/signup.jpg")}
               style={styles.image_properties}
-            ></ImageBackground>
+            ></ImageBackground> */}
 
           </View>
 
