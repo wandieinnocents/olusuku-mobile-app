@@ -36,7 +36,7 @@ rm -rf node_modules && yarn install && react-native run-android
 npm run android
 
 ## Build APK ( React native CLI)
-- react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res
+- npx react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res
 - cd android
 - Create debug build (RUN): ./gradlew assembleDebug
 

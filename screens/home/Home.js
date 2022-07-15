@@ -22,14 +22,6 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 // add svg icons
 import SvgUri from "react-native-svg-uri";
-// pages
-import FindProvider from "../repair/FindProvider";
-import MedicalCategory from "../medical/MedicalCategory";
-import FuelProviderCategory from "../fuel/FuelProviderCategory";
-import SpareCategory from "../spares/SpareCategory";
-
-// images = uri: 'https://reactnative.dev/img/tiny_logo.png';
-
 function Home({ navigation }) {
   // Handle App sharing
   const onShare = async () => {

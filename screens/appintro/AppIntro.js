@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
 const slides = [
   {
     key: 's1',
-    text: 'FRESH FOODS & HERBS \n\n Get Fresh x organic Foods and  \n Herbs To your Kitchen Door \n with convinience.',
+    text: 'FRESH FOODS & HERBS \n\n Get fresh  organic foods and  \n herbs To your kitchen Door \n with convinience.',
     title: '',
     image:require('../../assets/olusuku/orange.png'),
     backgroundColor: '#e96c16',
@@ -184,7 +184,7 @@ const slides = [
   },
   {
     key: 's3',
-    text: ' HOW IT WORKS \n\n You can Signup on the app \n Visit the catalogue \n and shop',
+    text: ' HOW IT WORKS \n\n You can signup on the app \n visit the catalogue \n and shop',
     image: require('../../assets/olusuku/cart.png'),
     backgroundColor: '#b04f99',
     // imageStyle: styles.image,

@@ -9,26 +9,12 @@ import Register from "../auth/Register";
 import ForgotPassword from "../auth/ForgotPassword";
 import SetNewPassword from "../auth/SetNewPassword";
 import VerifyPhoneNumber from "../auth/VerifyPhoneNumber";
-import FindProvider from "../repair/FindProvider";
-// repair provider map
-import RepairProviderMap from "../repair/maps/RepairProviderMap";
-import FuelProviderCategory from "../fuel/FuelProviderCategory";
-import MedicalCategory from "../medical/MedicalCategory";
-import SpareCategory from "../spares/SpareCategory";
-import FuelMap from "../fuel/maps/FuelMap";
-import MobileFuelMap from "../fuel/maps/MobileFuelMap";
-
 import Home from "../home/Home";
-import Profile from "../profile/Profile";
-import History from "../history/History";
-import HistoryDetails from "../history/HistoryDetails";
 import ContactSupport  from "../support/ContactSupport";
 import SendMessage from "../message/SendMessage";
 import About from "../about/About";
 import Settings from "../Settings";
 import Support from "../Support";
-import EditProfile from "../profile/EditProfile";
-import AudioRecord from "../medical/AudioRecord";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import CustomDrawer from "./CustomDrawer";
@@ -68,28 +54,8 @@ function WrapInBottomNav() {
           ),
         }}
       />
-      <Tab.Screen
-        name="History"
-        component={History}
-        options={{
-          tabBarIcon: ({ size, color }) => (
-            <FontAwesome5 name="history" color="#fff" size={22} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={Profile}
-        options={{
-          tabBarIcon: ({ size, color }) => (
-            <MaterialCommunityIcons
-              name="account-circle-outline"
-              color="#fff"
-              size={25}
-            />
-          ),
-        }}
-      />
+     
+     
     </Tab.Navigator>
   );
 }
@@ -100,8 +66,8 @@ function WrapInDrawerTab() {
     <Draw.Navigator drawerContent={(props) => <CustomDrawer />}>
       {/* <Draw.Screen name="Main" component={Home} /> */}
       <Draw.Screen name="Rydex" component={WrapInBottomNav} />
-      <Draw.Screen name="Profile" component={Profile} />
-      <Draw.Screen name="History" component={History} />
+      {/* <Draw.Screen name="Profile" component={Profile} /> */}
+      {/* <Draw.Screen name="History" component={History} /> */}
       <Draw.Screen name="Support" component={SendMessage} />
       <Draw.Screen name="About" component={About} />
       <Draw.Screen name="Settings" component={Settings} />
@@ -133,69 +99,8 @@ const StackNavigator = () => {
         component={Register}
       ></Stack.Screen>
 
-      {/* Record Audio */}
-      <Stack.Screen
-        name="AudioRecord"
-        options={{
-          headerShown: true,
-          title: "Audio Record",
-          headerStyle: {
-            backgroundColor: "#fff",
-          },
-        }}
-        component={AudioRecord}
-      ></Stack.Screen>
 
-      {/* Show repair provider form */}
-      <Stack.Screen
-        name="FindProvider"
-        options={{
-          headerShown: true,
-          title: "Find Provider",
-          headerStyle: {
-            backgroundColor: "#fff",
-          },
-        }}
-        component={FindProvider}
-      ></Stack.Screen>
-
-      {/* Repair providers map */}
-      <Stack.Screen
-        name="RepairProviderMap"
-        options={{
-          headerShown: true,
-          title: "Repair Providers",
-          headerStyle: {
-            backgroundColor: "#fff",
-          },
-        }}
-        component={RepairProviderMap}
-      ></Stack.Screen>
-
-      {/* Medical category options */}
-      <Stack.Screen
-        name="MedicalCategory"
-        options={{
-          headerShown: true,
-          title: "Medical Category",
-          headerStyle: {
-            backgroundColor: "#fff",
-          },
-        }}
-        component={MedicalCategory}
-      ></Stack.Screen>
-      {/* History Details */}
-      <Stack.Screen
-        name="HistoryDetails"
-        options={{
-          headerShown: true,
-          title: "History Details",
-          headerStyle: {
-            backgroundColor: "#fff",
-          },
-        }}
-        component={HistoryDetails}
-      ></Stack.Screen>
+      
 
       {/* Contact Support */}
       <Stack.Screen
@@ -211,19 +116,7 @@ const StackNavigator = () => {
       ></Stack.Screen>
 
 
-      {/* Chose fuel provider category */}
-      <Stack.Screen
-        name="FuelProviderCategory"
-        options={{
-          headerShown: true,
-          title: "Fuel Category",
-          headerStyle: {
-            backgroundColor: "#fff",
-          },
-        }}
-        component={FuelProviderCategory}
-      ></Stack.Screen>
-
+  
       {/* Send Message */}
       <Stack.Screen
         name="SendMessage"
@@ -238,18 +131,7 @@ const StackNavigator = () => {
       ></Stack.Screen>
 
 
-      <Stack.Screen
-        name="SpareCategory"
-        options={{
-          headerShown: true,
-          title: "Spare Category",
-          headerStyle: {
-            backgroundColor: "#fff",
-          },
-        }}
-        component={SpareCategory}
-      ></Stack.Screen>
-
+     
 {/* Forgot password  */}
       <Stack.Screen
         name="ForgotPassword"
@@ -275,28 +157,10 @@ const StackNavigator = () => {
         component={WrapInDrawerTab}
       ></Stack.Screen>
 
-      {/* Fuel Stations */}
-      <Stack.Screen
-        name="Fuel Stations"
-        options={{ headerShown: true }}
-        component={FuelMap}
-      ></Stack.Screen>
-
-      {/* Fuel Stations */}
-      <Stack.Screen
-        name="Mobile Fuel Delivery"
-        options={{ headerShown: true }}
-        component={MobileFuelMap}
-      ></Stack.Screen>
       <Stack.Screen name="Drawer" component={DrawerNavigator}/>
       <Stack.Screen name="Tab" component={RootTab} />
 
-    {/* Edit  profile */}
-    <Stack.Screen
-    name="Edit Profile"
-    options={{ headerShown: true }}
-    component={EditProfile}
-    ></Stack.Screen>
+ 
 
 </Stack.Navigator>
   );

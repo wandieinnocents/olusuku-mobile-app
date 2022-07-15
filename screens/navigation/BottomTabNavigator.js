@@ -1,8 +1,8 @@
 import React from "react";
 
 import Home from "../home/Home";
-import History from "../history/History";
-import Profile from "../profile/Profile"; 
+// import History from "../history/History";
+// import Profile from "../profile/Profile"; 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from 'react-native-vector-icons/FontAwesome';
 

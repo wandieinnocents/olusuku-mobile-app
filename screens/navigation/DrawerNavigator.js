@@ -2,8 +2,8 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import React from "react";
 
 import Home from "../home/Home";
-import Profile from "../profile/Profile";
-import History from "../History";
+// import Profile from "../profile/Profile";
+// import History from "../History";
 import Support from "../Support";
 import About from "../about/About";
 import Settings from "../Settings";
