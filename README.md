@@ -1,11 +1,8 @@
-## RYDEX PROVIDER MOBILE APP
+## OLUSUKU
 Rydex is a mobile application  to locate the nearest and affordable repair service provider , fuel providers and medical personels. 
 
 
-## Clone the git repository
-- git clone https://github.com/wandieinnocents/rydexuser_mobile_app.git
-- cd rydexuser_mobile_app
-- code .
+
 
 ## How to run your project
 - Run expo start , and chose 'a' for android to run the android app
@@ -43,6 +40,12 @@ npm run android
 ## Best way to run
 Run expo start 
 Type a : to emulate the android version 
+
+## Create a release , Android Bundle (.aab)
+- npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+- opens emulator : npx react-native run-android --variant=release
+- cd android && ./gradlew bundleRelease -x bundleReleaseJsAndAssets
 
 # Build , Automation and Release Management
 
