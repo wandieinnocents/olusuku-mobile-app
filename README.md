@@ -47,11 +47,21 @@ Type a : to emulate the android version
 - opens emulator : npx react-native run-android --variant=release
 - cd android && ./gradlew bundleRelease -x bundleReleaseJsAndAssets
 
+## Another test for release (.aab)
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+cd android && ./gradlew assembleRelease -x bundleReleaseJsAndAssets
+
 # Build , Automation and Release Management
 
 - We use **Jest** for Unit Testing
 
 **expo build:android** will be discontinued on January 4, 2023 from then on we will be using **eas build**
+
+## Remove dupicate resources
+- rm -rf ./android/app/src/main/res/drawable-*
+- rm -rf ./android/app/src/main/res/raw
+- ./gradlew clean
+
 
 
 
